@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    nav ul{
+      display: flex;
+      justify-content: space-between;
+    }
+    nav ul li{
+      list-style: none;
+    }
+    nav{
+      background-color: black;
+      color: white;
+      padding: 15px;
+      margin-top: 5px;
+    }
+    .main_nav{
+      padding: 10px;
+      color: rgb(20, 20, 94);
+      font-weight: 900;
+    }
+    .main_nav ul{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px 0px 20px;
+    }
+    .main_nav ul li{
+      list-style: none;
+    }
+    .main{
+      background:linear-gradient(rgb(167, 214, 223),rgb(202, 220, 238));
+      height: 95vh;
+    }
+    .user{
+      display: flex;
+      padding: 10px;
+
+    }
+    .user .info{
+      width: 30vw;
+      padding: 17%;
+      padding-top: 60px;
+    }
+    .user .info h1{
+      font-size: xxx-large;
+      color: rgb(26, 26, 56);
+    }
+    .user .info p{
+      margin-top: 3%;
+    }
+    .user .info button{
+      margin-top: 7%;
+      background-color: orangered;
+      padding: 4%;
+      width: 10vw;
+      border: 0;
+    }
+    .user .user_image{
+      width: 70vw;
+    }
+    .user_image img{
+      width: 350px;
+    }
+    .b1{
+      border: 2px solid grey;
+      box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.9), /* Top */
+                  5px 0 10px -5px rgba(0, 0, 0, 0.9), /* Right */
+                  0 5px 10px -5px rgba(0, 0, 0, 0.9), /* Bottom */
+                  -5px 0 10px -5px rgba(0, 0, 0, 0.9); /* Left */
+      margin-right: 20px ;
+      padding: 40px;
+      text-align: center;
+      width: 130px;
+    }
+    .b1 i{
+      font-size: 60px;
+    }
+    .b1 h2{
+      margin: 10px;
+    }
+    .b2{
+      margin-right: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.9), /* Top */
+                  5px 0 10px -5px rgba(0, 0, 0, 0.9), /* Right */
+                  0 5px 10px -5px rgba(0, 0, 0, 0.9), /* Bottom */
+                  -5px 0 10px -5px rgba(0, 0, 0, 0.9); /* Left */
+      background-color: orange;
+    }
+    .b2 h2{
+      margin: 10px;
+    }
+    .b3{
+      margin-right: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.9), /* Top */
+                  5px 0 10px -5px rgba(0, 0, 0, 0.9), /* Right */
+                  0 5px 10px -5px rgba(0, 0, 0, 0.9), /* Bottom */
+                  -5px 0 10px -5px rgba(0, 0, 0, 0.9); /* Left */
+    }
+    .b3 h2{
+      margin: 10px;
+    }
+    .b2 i{
+      font-size: 60px;
+    }
+    .box2{
+      padding: 80px; background-color: white;
+    }
+    .b3 i{
+      font-size: 60px;
+    }
+    .box2 .user_box1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .user_box2{
+      max-width: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .user_box2 .left{
+      width: 60vw;
+      margin-left: 100px;
+      font-size: larger;
+    }
+    .user_box2 .right{
+      width: 40vw;
+      padding: 10%;
+    }
+    .user_box3{
+      display: flex;
+      align-items: center;
+      background-color: rgb(207, 207, 250);
+      max-width: 100%;
+    }
+    .user_box3 .left{
+      width: 50vw;
+      margin-left: 150px;
+    }
+    .user_box3 .right{
+      width: 50vw;
+      font-size: larger;
+      padding: 14%;
+    }
+
+    .user_box3 .left img{
+      width: 300px;
+    }
+    .services{
+      display: flex;
+      justify-content: space-around;
+      padding: 40px;
+    }
+    .head{
+      margin-top: 30px;
+    }
+    .services i{
+      font-size: 50px;
+    }
+    .services h2{
+      margin-top: 20px;
+    }
+    .services p{
+      margin-top: 20px;
+    }
+    .head h1{
+      text-align: center;
+    }
+    .maintenance{
+      text-align: center;
+      padding: 20px;
+      width: 25%;
+      box-shadow: 0 -5px 10px -5px rgba(0, 0, 0, 0.9), /* Top */
+                  5px 0 10px -5px rgba(0, 0, 0, 0.9), /* Right */
+                  0 5px 10px -5px rgba(0, 0, 0, 0.9), /* Bottom */
+                  -5px 0 10px -5px rgba(0, 0, 0, 0.9); /* Left */
+    }
+    .maintenance:hover{
+      background-color: orange;
+    }
+    .view{
+      text-align: center;
+    }
+    .view button{
+      width: 140px;
+      padding: 9px;
+      background-color: rgb(61, 61, 228);
+      color: white;
+      border: 0;
+      margin-top: 20px;
+    }
+    .view button:hover{
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+
+     
+    
+    
+
+
+  </style>
+</head>
+<body>
+  <class="container">
+    <nav>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> Call:+01 123456789</li>
+        <li><i class="fa-solid fa-envelope"></i> Email:vikas@gmail.com</li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="main_nav">
+        <ul>
+          <li>INANCE</li>
+          <li><i class="fa-solid fa-bars"></i></li>
+        </ul>
+      </div>
+      <div class="user">
+        <div class="info">
+          <h1>Repair and Maintenance Services</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic deserunt quam earum debitis, porro ex quae autem quo dolorum aut soluta. Consequatur laborum impedit assumenda esse corporis? Ab error neque, omnis aut ratione magni repellat cumque doloremque cum consectetur!</p>
+          <button>Contact Me</button>
+        </div>
+        <div class="user_image"><img src="pngegg.png" alt=""></div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="user_box1">
+        <div class="b1">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h2>REPAIR</h2>
+        </div>
+        <div class="b2">
+          <i class="fa-solid fa-house-chimney"></i>
+          <h2>IMPROVE</h2>
+        </div>
+        <div class="b3">
+          <i class="fa-solid fa-house"></i>
+          <h2>MAINTAIN</h2>
+        </div>
+      </div>
+      
+      <div class="user_box2">
+        <div class="left">
+        <h1 style="font-weight: 90px;">ABOUT US</h1>
+        <p style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam ex quod sequi repellendus, eos suscipit ullam illo recusandae maiores quaerat excepturi, illum est voluptate impedit nostrum veritatis. Porro, voluptatibus. Minus esse libero consequuntur cupiditate maiores nihil deleniti delectus magnam?</p>
+        <button style="padding: 10px; margin-top: 15px; width: 120px; background-color: blue; color: white;">READ MORE</button>
+        </div>
+        <div class="right">
+          <img src="https://media.istockphoto.com/id/506473594/photo/manual-worker-on-a-workshop.webp?b=1&s=170667a&w=0&k=20&c=2Xih8vtLqmOhA7sS2ssh28OpAqRmIJT0M3IgJSro4wM=" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="user_box3">
+      <div class="left">
+        <img src="pngfind.com-electricista-png-3316426.png" alt="">
+      </div>
+      <div class="right">
+        <h1 style="font-weight: 90px; color: rgb(49, 49, 92);">WE PROVIDE PROFESSONAL <br> HOME SERVICES</h1>
+        <p style="margin-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam ex quod sequi repellendus, eos suscipit ullam illo recusandae maiores quaerat excepturi, illum est voluptate impedit nostrum veritatis. Porro, voluptatibus. Minus esse libero consequuntur cupiditate maiores nihil deleniti delectus magnam?</p>
+        <button style="padding: 10px; border: 0; margin-top: 25px; width: 120px; background-color: rgb(192, 115, 14); color: white;">READ MORE</button>
+      </div>
+    </div>
+    <div class="head">
+      <h1 style="padding: 30px;">Our Services</h1>
+      <div class="services">
+        <div class="maintenance">
+          <i class="fa-solid fa-screwdriver-wrench fa-beat" style="color: #020005;"></i>
+          <h2>MAINTENANCE</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, provident. Molestiae pariatur hic, neque esse ab rem doloribus laboriosam quisquam?</p>
+        </div>
+        <div class="maintenance">
+          <i class="fa-solid fa-charging-station fa-beat" style="color: #00040a;"></i>
+          <h2>ELECTRICAL</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore maiores distinctio, quaerat autem tenetur vero dolorem adipisci fugiat accusantium at.</p>
+        </div>
+        <div class="maintenance">
+          <i class="fa-solid fa-faucet-drip fa-beat" style="color: #010409;"></i>
+          <h2>PLUMBING</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum odit id sequi quisquam sed nobis at repellat ex corporis fugiat.</p>
+        </div>
+      </div>
+     <div class="view">
+      <button>VIEW MORE</button>
+     </div>
+    </div>
+  </div>
+</body>
+</html>
